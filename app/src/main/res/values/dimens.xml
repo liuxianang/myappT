@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="thumnail_default_width">100dip</dimen>
+    <dimen name="thumnail_default_height">100dip</dimen>
+    <dimen name="activity_home_yitao">30dp</dimen>
+    <dimen name="activity_home_top">3dp</dimen>
+    <dimen name="activity_home_text">20dp</dimen>
+    <dimen name="activity_home_padding">5dp</dimen>
+    <dimen name="activity_home_fragment">180dip</dimen>
+    <dimen name="activity_home_ListView">140dip</dimen>
+    <dimen name="space_m">16dip</dimen>
+    <dimen name="space_s">8dip</dimen>
+    <dimen name="avatar_size_l">60dp</dimen>
+    <dimen name="txt_m">16sp</dimen>
+    <dimen name="marginTop">50dip</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="item_height_normal">50dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="text_size_normal">14dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="image_height_litter">20dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+
+</resources>

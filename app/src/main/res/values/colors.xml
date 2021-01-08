@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="feiheise">#685E55</color>
+    <color name="hongse">#F84E4E</color>
+    <color name="danhuise">#968F87</color>
+    <color name="black">#000000</color>
+    <color name="cw_black">#000000</color>
+    <color name="cw_red">#DC143F</color>
+    <color name="orange_main">#ec6f1a</color>
+    <color name="tv_gray_deep">#818181</color>
+    <color name="orange_light">#ffd39b</color>
+    <color name="top_bar_normal_bg">#ec6f1a</color>
+    <color name="orange_most">#C76114</color>
+    <color name="transparent_half">#a0000000</color>
+    <color name="colorBalck">#000000</color>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_bottom" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/feiheise" >
+
+        <RelativeLayout
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/hongse" >
+
+            <ImageView
+                android:id="@+id/img_shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/shouye2" />
+
+            <TextView
+                android:id="@+id/txt_shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_shouye"
+                android:layout_centerHorizontal="true"
+                android:text="@string/shouye"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_leimu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/leimu" />
+
+            <TextView
+                android:id="@+id/txt_leimu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_leimu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/leimu"
+                android:textColor="#968F87" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_shoppingcart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_gouwuche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/gouwuche2" />
+
+            <TextView
+                android:id="@+id/txt_gouwuche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_gouwuche"
+                android:layout_centerHorizontal="true"
+                android:text="@string/gouwuche"
+                android:textColor="#968F87" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/wode" />
+
+            <TextView
+                android:id="@+id/txt_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_wode"
+                android:layout_centerHorizontal="true"
+                android:text="@string/wode"
+                android:textColor="#968F87" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

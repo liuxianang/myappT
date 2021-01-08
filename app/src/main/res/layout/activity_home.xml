@@ -1,0 +1,343 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hongse"
+        android:padding="@dimen/activity_home_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/yitao"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_home_yitao" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relative_biaoti"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.lxa.demo.mydemo.lib.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_home_fragment" />
+
+            <TextView
+                android:id="@+id/txt_youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_cycle_viewpager_content"
+                android:layout_marginLeft="@dimen/activity_home_padding"
+                android:layout_marginTop="@dimen/activity_home_top"
+                android:text="@string/youhui"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_home_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_yi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_youhui"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图书"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu"
+                        android:src="@drawable/tushu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男装"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu2"
+                        android:src="@drawable/nanzhuang" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女装"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu3"
+                        android:src="@drawable/nvzhuang" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_yi2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_yi"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大转盘"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu4"
+                        android:src="@drawable/dianzishuma" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卡牌游戏"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu5"
+                        android:src="@drawable/meishi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大转盘"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu6"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_zuixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_home_padding"
+                android:layout_marginTop="@dimen/activity_home_top"
+                android:text="@string/zuixin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_home_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_yi3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_zuixin"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu7"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu32"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu33"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_yi4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_yi3"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu44"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu45"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_quanqiu46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全球精选"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_quanqiu46"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
